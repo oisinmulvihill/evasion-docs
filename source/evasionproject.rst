@@ -2,7 +2,6 @@
 Evasion Project 
 ================
 
-
 :author: Oisin Mulvihill, Folding Software Limited.
 
 .. toctree::
@@ -13,19 +12,15 @@ Evasion Project
 	evasion-viewpoint.rst
 
 
-Development Set up
-------------------
+Introduction
+============
 
-MacOSX
-~~~~~~
+.. image:: images/evasion.png
 
-From the project root you need to run "viewpoint_mac_devsetup.sh". This creates a the absolute path
-symlink from the "viewpoint" to "Resources" inside the "platform/macosx/viewpoint.app/Contents"
-To release the project the contents of the viewpoint resources could be copied instead. 
+The Evasion Project allows the tradition web application developer to escape the confines of 
+just web development. It allows the developer to easily create projects that can be desktop
+bound and have access to hardware and local services.
 
-Windows
-~~~~~~~
 
-I'm not sure yet how to get this to work as symlinks don't work here...
 
 
