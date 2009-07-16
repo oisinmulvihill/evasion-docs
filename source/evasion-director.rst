@@ -1,3 +1,5 @@
 ==================
 Evasion Director
 ==================
+
+.. automodule:: director
