@@ -15,7 +15,7 @@ Evasion Project
 Introduction
 ============
 
-.. image:: images/evasion.png
+.. image:: /images/evasion.png
 
 The Evasion Project allows the tradition web application developer to escape the confines of 
 just web development. It allows the developer to easily create projects that can be desktop
