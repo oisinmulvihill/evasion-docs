@@ -39,4 +39,5 @@ Agency API
 ==========
 
 .. automodule:: agency.agent
+.. automodule:: agency.config
 .. automodule:: agency.manager
