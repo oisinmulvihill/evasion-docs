@@ -41,3 +41,4 @@ Agency API
 .. automodule:: agency.agent
 .. automodule:: agency.config
 .. automodule:: agency.manager
+.. automodule:: agency.agents.testing.fake
