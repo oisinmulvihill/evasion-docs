@@ -6,7 +6,7 @@ Evasion Project
 :license: Evasion Project COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0
 
 .. toctree::
-	:maxdepth: 2
+	:maxdepth: 3
 	
 	evasion-director.rst
 	evasion-agency.rst
