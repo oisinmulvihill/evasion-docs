@@ -34,4 +34,6 @@ The python evasion-director provides the `director` package. It provides
 the following functionality.
 
 .. automodule:: director
+.. automodule:: config
+.. automodule:: director
 
