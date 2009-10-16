@@ -4,6 +4,7 @@ Evasion Project
 
 :author: Oisin Mulvihill
 :license: Evasion Project COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0
+:URI: http://www.evasionproject.com
 
 .. toctree::
 	:maxdepth: 3
