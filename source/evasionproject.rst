@@ -17,7 +17,9 @@ Introduction
 
 .. image:: /images/evasion.png
 
-The Evasion Project allows the tradition web application developer to escape the confines of 
+The EvasionProject allows you to quickly create a cross-platform GUI using web technologies.
+
+The project allows the tradition web application developer to escape the confines of 
 "just" web development. It allows the developer to easily create projects that could be desktop
 bound and / or have access to hardware and local services.
 
