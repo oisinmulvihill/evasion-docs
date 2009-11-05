@@ -1,0 +1,16 @@
+===================
+Contributor changes
+===================
+
+Fixes / Patches / New functionality contributed and accepted into
+the Evasion Project.
+
+
+2009-11-03 Chris Jesse (Flight Data Services) viewpointdirect.py:
+------------------------------------------------------------------
+Fixed "[Errno 9] Bad file descriptor" which occurs when a new 
+socket isn't created after each close of the socket object. 
+i.e. whenever retries > 1, this would have failed and returned 
+False. Also added immediate return if connection was successful 
+(why try multiple times if it worked once)
+    
