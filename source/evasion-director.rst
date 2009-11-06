@@ -18,10 +18,17 @@ The director will check each part is running and will restart if one
 part exits.
 
 
+Director Command Line
+======================
+
+The director current provides the current command line options
+
+
 Director Configuration
 =======================
 
-The 
+The following is an example configuration as generated using the --create
+command line option.
 
 
 Director API
