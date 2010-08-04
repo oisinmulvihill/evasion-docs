@@ -83,5 +83,5 @@ in the running system.
 Agency Module
 =============
 
-.. automodule:: agency
+.. automodule:: evasion.agency
 
