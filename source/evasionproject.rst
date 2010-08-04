@@ -19,17 +19,9 @@ and cross platform support.
 Who uses it?
 ============
 
-Newman Online Limited
----------------------
-
-NewmanOnline_ provides sells a Cinema Administration and Ticketting system. It uses the
-EvasionProject as the basis for its Windows based ATM, Kiosk and Usherpoint systems. These
-are used through-out Europe and allow to sales and pickup without needing a staff member 
-present.
-
-
-PythonPro Limited
------------------
+NewmanOnline_ provides a Cinema Administration and Ticketting system. It uses the EvasionProject 
+as the basis for its Windows based ATM, Kiosk and Usherpoint systems. These are used through-out 
+Europe and allow for unmanned sales and pickup.
 
 PythonPro_ uses the EvasionProject as the basis for its Prepay Internet Cafe system. It is used
 to manage the various part of its highly customised Linux client.
@@ -76,8 +68,8 @@ to be made out of "Apps". Each "App" could provide all of the web application or
 App is a special Python_ package. They can derive from each other and so can allow highly reuseable
 functionality to be developed. 
 
-This "evasion.web" can be used on its own and is not dependant on the other parts. It could also be 
-replaced potentially be replaced with other web framework such as Django_, Flask_, etc. You could 
+"evasion.web" can be used on its own and is not dependant on the other parts. It could also be 
+potentially be replaced with other web framework such as Django_, Flask_, etc. You could 
 even decide to use static files and javascript to generate the interface.
 
 
@@ -85,7 +77,7 @@ Director
 --------
 
 The "evasion.director" is an init.d like management program. It runs and maintains the broker, 
-agency, web application and any other program under its care.
+agency, web application, viewpoint and any other program under its care.
 
 The director uses simple INI based configuration. It can be configured to run an arbitrary amount 
 of programs used to make up an application. 
@@ -107,6 +99,19 @@ The agency manages the hardware drivers called agents. An agent is simply a spec
 package conforming to a certain interface. The agents are dynamically loaded from director
 configuration at run time.
 
+
+Viewpoint
+---------
+
+The viewpoint is a XUL_ application which is run on the latest Firefox_ or GRE_ (Gecko Runtime
+Environment). This allows your web application to use the very latest features of HTML5, CSS3
+and Javascript. This viewpoint also provides a single browser type to develop for. This means
+no hack are needed to support other browsers. If Firefox_ supports it, you can use it!
+
+The Evasion viewpoint is generally a reference implementation and companies to to branch it 
+and implement their own versions. This allows you to customise the start or screen or further
+refine the interface.
+
  
 Messenger
 ---------
@@ -120,16 +125,22 @@ Publish/Subscribe system uses pydispatcher_ at its heart.
 Project Documentation
 =====================
 
+API
+---
+
 .. toctree::
     :maxdepth: 3
     
     evasion-web.rst
     evasion-director.rst
     evasion-agency.rst
+    evasion-viewpoint.rst
     evasion-messenger.rst
-
     
     
+.. _GRE: https://developer.mozilla.org/en/gre
+.. _Firefox: http://www.mozilla-europe.org/en/firefox/    
+.. _XUL: https://developer.mozilla.org/en/xul    
 .. _PythonPro:     http://#
 .. _pydispatcher: http://pydispatcher.sourceforge.net/
 .. _ActiveMQ: http://activemq.apache.org/
