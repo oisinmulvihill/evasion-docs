@@ -11,7 +11,7 @@ Environment). This allows your web application to use the very latest features o
 and Javascript. This viewpoint also provides a single browser type to develop for. This means
 no CSS hacks are needed to support other browsers. If Firefox_ supports it you can use it!
 
-The Evasion viewpoint is generally a reference implementation and companies to to branch it 
+The Evasion viewpoint is generally a reference implementation and companies generally branch it 
 and implement their own versions. This allows you to customise the start or screen or further
 refine the interface.
 
@@ -26,7 +26,7 @@ This allows the Viewpoint to be flipped between two URIs changing between 'norma
 'admin' mode. When the status bar on the Viewpoint is clicked more the 7 times within 
 20 seconds, the Viewpoint will toggle between admin and normal modes. In admin mode the
 -adminuri or its default it loaded. In normal mode -starturi or its default is loaded.
-If the clicks do not occur with the 20 second window they will be ignored.
+If the clicks do not occur within the 20 seconds they will be ignored.
 
 To disable this feature hide the status bar.
 
@@ -49,7 +49,7 @@ This mode is used in applications where the director is running as a service on 
 under init on linux. 
 
 
-.. sourcecode::
+.. sourcecode:: ini
 
     [viewpoint]
     # Standard options example:
@@ -87,7 +87,7 @@ If the URI does not respond then the initial URI will not be changed.
 
 This mode is used in applications that typically should not exit and will always be running.
 
-.. sourcecode::
+.. sourcecode:: ini
 
     [viewpoint]
     # Standard options example:
@@ -250,6 +250,50 @@ The default is 'no'.
 Development
 ===========
 
+Control from Python_
+--------------------
+
+There are two programtic ways of controlling the Viewpoint from Python_. The first is via
+direct socket communication. The second is via the messaging system. 
+
+Direct Control
+~~~~~~~~~~~~~~
+
+This is the easiest to use and is based around the following code. The Viewpoint will need
+to be running, although it doesn't need to be running as part of the director.
+
+..sourcecode:: python
+
+  # TODO: code parse include docs here:
+  evasion.director.viewpointdirect.DirectBrowserCalls
+
+The director provide a command line tool called viewpointdirect which can be used as a 
+refenerence implementation for this approach.
+
+The main disadvantage of this approach is that remote system cannot communicate with the
+Viewpoint run on a machine. It only binds to localhost. The messaging system is the 
+alternative way of controlling the Viewpoint. This can be called remotely.
+
+
+Message based Control
+~~~~~~~~~~~~~~~~~~~~~
+
+This is a bit more involved to set up but not needlessly so. The director needs to be running 
+and configured. The Viewpoint configuration should be in either Passive or Kiosk mode. 
+
+Next your program needs to be running as part of the messaging system. For more details on this
+see the evasion.messenger documentation. Assuming your program is then you can now use the 
+following code. 
+
+This class wraps the messenging specifics and provides a nice programatic way to use the Viewpoint
+signals.
+
+..sourcecode:: python
+
+  # TODO: code parse include docs here:
+  evasion.director.viewpointcontrol.BrowserCalls
+
+
 viewpointdirect
 ---------------
 
@@ -266,7 +310,7 @@ XUL Control Protocol commands.
 
 It has the following command line options:
     
-.. sourcecode::
+.. sourcecode:: bash
 
     $ viewpointdirect -h
     Usage: viewpointdirect [options]
@@ -424,7 +468,7 @@ reponse. It will close the control connection and perform an ordered shutdown of
 
 The control frame for this command is:
 
-..sourcecode:: python
+.. sourcecode:: python
 
     control_frame = {
         'command' : 'exit',
