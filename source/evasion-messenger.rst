@@ -18,9 +18,12 @@ Publish/Subscribe system uses pydispatcher_ at its heart.
 Quickstart
 ==========
 
+Do some
+
 
 Code Documentation
 ==================
+
 
 .. automodule:: evasion.messenger
 
@@ -29,12 +32,8 @@ Code Documentation
 
 
 
-.. _pydispatcher: http://pydispatcher.sourceforge.net/
-.. _ActiveMQ: http://activemq.apache.org/
-.. _RabbitMQ: http://www.rabbitmq.com/
-.. _MorbidQ: http://www.morbidq.com/
 .. _STOMP: http://stomp.codehaus.org/Protocol
-.. _Python: http://www.python.org/
+.. _pydispatcher: http://pydispatcher.sourceforge.net/
 
 
 

@@ -136,7 +136,49 @@ API
     evasion-agency.rst
     evasion-viewpoint.rst
     evasion-messenger.rst
-    
+
+Issue Tracker
+-------------
+
+ * http://issues.evasionproject.com
+
+ 
+Launchpad Code Repository
+-------------------------
+ 
+ * https://launchpad.net/evasionproject
+ * https://launchpad.net/~evasion-team
+ 
+ 
+Wiki
+----
+
+ * http://wiki.evasionproject.com
+
+ 
+App Store
+---------
+
+This is a PyPi like store of all the third party apps which can be used with the evasion.web project.
+The following URI can be used with easy_install to download apps from.
+
+ * http://apps.evasionproject.com
+
+
+Agent Store
+-----------
+
+This is a PyPi like store of all the third party agents which can be used with the evasion.agency.
+The following URI can be used with easy_install to download apps from.
+
+ * http://agents.evasionproject.com
+ 
+
+
+
+
+
+ 
     
 .. _GRE: https://developer.mozilla.org/en/gre
 .. _Firefox: http://www.mozilla-europe.org/en/firefox/    
