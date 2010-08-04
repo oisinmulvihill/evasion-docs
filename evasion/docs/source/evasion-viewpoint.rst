@@ -19,18 +19,6 @@ refine the interface.
 Running the Viewpoint
 =====================
 
-Knocking Feature
-----------------
-
-This allows the Viewpoint to be flipped between two URIs changing between 'normal' and 
-'admin' mode. When the status bar on the Viewpoint is clicked more the 7 times within 
-20 seconds, the Viewpoint will toggle between admin and normal modes. In admin mode the
--adminuri or its default it loaded. In normal mode -starturi or its default is loaded.
-If the clicks do not occur within the 20 seconds they will be ignored.
-
-To disable this feature hide the status bar.
-
-
 Via the Director
 ----------------
 
@@ -245,6 +233,18 @@ This removes the default status bar which shows the loading message. If this is 
 "knock" feature will no be available.
 
 The default is 'no'.
+
+
+Knocking Feature
+----------------
+
+This allows the Viewpoint to be flipped between two URIs changing between 'normal' and 
+'admin' mode. When the status bar on the Viewpoint is clicked more the 7 times within 
+20 seconds, the Viewpoint will toggle between admin and normal modes. In admin mode the
+-adminuri or its default it loaded. In normal mode -starturi or its default is loaded.
+If the clicks do not occur within the 20 seconds they will be ignored.
+
+To disable this feature hide the status bar.
 
 
 Development
