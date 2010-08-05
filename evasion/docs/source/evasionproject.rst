@@ -141,7 +141,7 @@ API
 Issue Tracker
 -------------
 
- * http://issues.evasionproject.com
+ * http://www.evasionproject.com/report/1
 
  
 Launchpad Code Repository
@@ -154,7 +154,7 @@ Launchpad Code Repository
 Wiki
 ----
 
- * http://wiki.evasionproject.com
+ * http://www.evasionproject.com/wiki
 
  
 App Store
@@ -173,9 +173,6 @@ This is a PyPi like store of all the third party agents which can be used with t
 The following URI can be used with easy_install to download apps from.
 
  * http://agents.evasionproject.com
- 
-
-
 
 
 
