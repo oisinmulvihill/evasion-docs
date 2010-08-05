@@ -54,8 +54,8 @@ Why Use it?
 * It allows easily creation of projects that could be desktop bound and/or or have access to hardware and local services.
 
 
-Evasion Project Parts
-=====================
+Project Parts
+=============
 
 The project "toolbox" is made up of a number of parts. Each of these parts is a Python_ package
 under the "evasion" namespace.
