@@ -9,16 +9,17 @@ Evasion Messenger
 Introduction
 =============
 
-The "evasion.messger" is the communication library used as part of the hardware abstraction 
-process. A Publish/Subscribe system is implemented on top of the STOMP_ protocol. This allows
-communication across processes, programs and even machines distributed across a network. The 
-Publish/Subscribe system uses pydispatcher_ at its heart.
+The "evasion.messenger" is the communication library used as part of a
+hardware abstraction process. A Publish/Subscribe system is implemented on top
+ZeroMQ and the Publish/Subscribe pattern. This allows communication across
+processes, programs and machines distributed across a network.
 
 
-Quickstart
-==========
+Example
+=======
 
-Do some
+The example/timeservice in the source code provides a basic example of a time
+service publishing the current time out connected clients.
 
 
 Code Documentation
@@ -26,14 +27,4 @@ Code Documentation
 
 
 .. automodule:: evasion.messenger
-
-
-
-
-
-
-.. _STOMP: http://stomp.codehaus.org/Protocol
-.. _pydispatcher: http://pydispatcher.sourceforge.net/
-
-
 

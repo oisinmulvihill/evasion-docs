@@ -65,19 +65,6 @@ Project Parts
 The project "toolbox" is made up of a number of parts. Each of these parts is a Python_ package
 under the "evasion" namespace.
 
-Web
----
-
-The "evasion.web" is a customised version of the Pylons_ web framework. It allows a web application
-to be made out of "Apps". Each "App" could provide all of the web application or specific parts. Each
-App is a special Python_ package. They can derive from each other and so can allow highly reuseable
-functionality to be developed.
-
-"evasion.web" can be used on its own and is not dependant on the other parts. It could also be
-potentially be replaced with other web framework such as Django_, Flask_, etc. You could
-even decide to use static files and javascript to generate the interface.
-
-
 Director
 --------
 
@@ -87,14 +74,14 @@ agency, web application, viewpoint and any other program under its care.
 The director uses simple INI based configuration. It can be configured to run an arbitrary amount
 of programs used to make up an application.
 
-Broker
-~~~~~~~
 
-The broker is the heart of messaging and hardware abstraction. The "evasion.messenger" library is
-the higher level library all parts when dealing with it. The director provides its own STOMP_ broker
-based on the MorbidQ_by default. For larger scale systems, distributed across a network, other
-brokers could be used for example ActiveMQ_ or RabbitMQ_. This would allow for seamless scalability
-as the messaging traffic increases.
+Common
+------
+
+This provides helper functions and utilities that can be used outside of the
+project.
+
+.. automodule:: evasion.common
 
 
 Agency
@@ -122,9 +109,8 @@ Messenger
 ---------
 
 The "evasion.messger" is the communication library used as part of the hardware abstraction
-process. A Publish/Subscribe system is implemented on top of the STOMP_ protocol. This allows
-communication across processes, programs and even machines distributed across a network. The
-Publish/Subscribe system uses pydispatcher_ at its heart.
+process. A Publish/Subscribe system is implemented on top of ZeroMQ. This allows
+communication across processes, programs and even machines distributed across a network.
 
 
 Project Documentation
@@ -136,7 +122,6 @@ API
 .. toctree::
     :maxdepth: 3
 
-    evasion-web.rst
     evasion-director.rst
     evasion-agency.rst
     evasion-viewpoint.rst
@@ -146,41 +131,16 @@ API
 Issue Tracker
 -------------
 
- * http://www.evasionproject.com/report/1
+All issue for the Evasion Project are host on GitHub under the evasion-director
+project:
 
-
-Launchpad Code Repository
--------------------------
-
- * https://launchpad.net/evasionproject
- * https://launchpad.net/~evasion-team
+ * https://github.com/oisinmulvihill/evasion-director/issues
 
 
 Wiki
 ----
 
  * http://www.evasionproject.com/wiki
-
-
-App Store
----------
-
-This is a PyPi like store of all the third party apps which can be used with the evasion.web project.
-The following URI can be used with easy_install to download apps from.
-
- * http://apps.evasionproject.com
-
-
-Agent Store
------------
-
-This is a PyPi like store of all the third party agents which can be used with the evasion.agency.
-The following URI can be used with easy_install to download apps from.
-
- * http://agents.evasionproject.com
-
-
-
 
 
 .. _GRE: https://developer.mozilla.org/en/gre

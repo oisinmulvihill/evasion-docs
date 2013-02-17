@@ -30,20 +30,14 @@ TestSuite = ''
 
 needed = [
     'docutils',
-	'pygments',
-	'sphinx',
+    'pygments',
+    'sphinx',
     
     # evasion deps:
-    'evasion-web',
     'evasion-messenger',
-    'evasion-agency',
     'evasion-director',
 ]
 
-#  find lib/director/viewpoint -type d -exec touch {}//__init__.py \;
-#
-# If new directories are added then I'll need to rerun this command.
-#
 EagerResources = [
     'evasion',
 ]
